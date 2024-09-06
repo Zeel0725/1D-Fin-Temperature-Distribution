@@ -61,10 +61,11 @@ src/plot.gnu: GNUplot script for visualizing the results.
 docs/report.pdf: Detailed report explaining the methodology and findings.
 docs/presentation.pptx: PowerPoint presentation summarizing the key aspects of the project.
 
-##References
+## References
+- [GNUplot Documentation](http://www.gnuplot.info/documentation.html)
+- [TDMA Algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Tridiagonal_matrix_algorithm)
+- [C++ Standard Library Documentation](https://en.cppreference.com/w/)
+- [C# Documentation (Microsoft)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 
-1. GNUplot Documentation
-2. TDMA Algorithm (Wikipedia)
-3. C++ Standard Library Documentation
 
 
