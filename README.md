@@ -35,10 +35,13 @@ The repository is structured as follows:
    ```bash
    git clone https://github.com/zeel0725/1D-Fin-Temperature-Distribution.git
 2. Navigate to the src folder:
+   ```bash
    cd 1D-Fin-Temperature-Distribution/src
-3. Compile the C++ code:
+4. Compile the C++ code:
+   ```bash
    g++ temperature_model.cpp -o temp_model
-4. Run the compiled program:
+6. Run the compiled program:
+   ```bash
    ./temp_model
 
 ## Visualization
@@ -46,6 +49,7 @@ The repository is structured as follows:
 To visualize the temperature distribution over time:
 Open the plot.gnu file with GNUplot:
 gnuplot plot.gnu
+
 
 This will generate plots showing the temperature distribution under different heating conditions for each scenario.
 
