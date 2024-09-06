@@ -33,7 +33,7 @@ The repository is structured as follows:
 ### Steps to run the simulation:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/1D-Fin-Temperature-Distribution.git
+   git clone https://github.com/zeel0725/1D-Fin-Temperature-Distribution.git
 2. Navigate to the src folder:
    cd 1D-Fin-Temperature-Distribution/src
 3. Compile the C++ code:
