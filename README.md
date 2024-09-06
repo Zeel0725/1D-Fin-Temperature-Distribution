@@ -41,7 +41,7 @@ The repository is structured as follows:
 4. Run the compiled program:
    ./temp_model
 
-##Visualization
+## Visualization
 
 To visualize the temperature distribution over time:
 Open the plot.gnu file with GNUplot:
@@ -49,12 +49,12 @@ gnuplot plot.gnu
 
 This will generate plots showing the temperature distribution under different heating conditions for each scenario.
 
-##Results
+## Results
 
 The results demonstrate how the heating rate (constant, length-dependent, or time-dependent) affects the temperature distribution along the fin. The visualizations generated using GNUplot help illustrate the temperature variation over time and space, providing insights into thermal behavior under each heating condition.
 
 
-##Files
+## Files
 
 src/temperature_model.cpp: C++ code that implements the TDMA algorithm to compute the temperature distribution.
 src/plot.gnu: GNUplot script for visualizing the results.
