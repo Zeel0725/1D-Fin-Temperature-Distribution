@@ -1,32 +1,43 @@
-//#include<iostream>
-#include<stdio.h>
-#include<math.h>
-#include<conio.h>
-#include<io.h>
-main()
-{
-int nx;
-printf("enter number of grids- ");
-scanf("%d",&nx);
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <errno.h>
+
+int main() {
+
+    const char* dir = "ST";
+    if (mkdir(dir, 0755) == -1 && errno != EEXIST) {
+        perror("Error creating directory");
+    }
+
+    int nx;
+    printf("Enter number of grids: ");
+    scanf("%d", &nx);
+
+    double x[nx+10], T[nx+10], Told[nx+10], d[nx+10], a[nx+10], b[nx+10], R[nx+10];
     
-double x[nx+10],T[nx+10],Told[nx+10],d[nx+10],a[nx+10],b[nx+10],R[nx+10];
-	
-mkdir("SC");
-	
-	
-int i,step,M,boundary_choicel,boundary_choicer;
-double L,dx,A,dt,TH,TC,ap,aw,ae,a0,rms,residue,S,h,k,Ts,q,c,B;
+    int i, step, boundary_choicel, boundary_choicer;
+    double L, dx, A, dt, TH, TC, ap, aw, ae, a0, rms, residue, S, h, k, Ts, q, B;
 
-dt = 0.01; //time-step
-residue = 0.000001;  //residue
-B=0.002;
+	int c;
+    scanf("%d", &c);
 
-printf("enter the value of volumetric heating rate S= ");
-scanf("%lf", &S);
+
+    dt = 0.01;  // time-step
+    residue = 0.000001;  // residue
+    B = 0.002;
+
+    printf("Enter the value of volumetric heating rate S: ");
+    scanf("%lf", &S);
+
+    // rest of the code remains the same...
+
 
 printf("\nEnter 1 for constant S\nEnter 2 for S as function of temperatue\nEnter 3 for S as function of fin distance\n");
 printf("Volumetric heating rate function- ");
-scanf("%lf",&c);
+scanf("%d", &c);
 
 printf("\nenter the value of L= ");
 scanf("%lf", &L);
@@ -131,7 +142,7 @@ dx = L/nx;
 	for(i=2;i<=nx-1;i++)
 	d[i] = ap;
 	
-if(c=1)	
+if(c==1)	
 {
 
 	if (boundary_choicel==1)
@@ -211,7 +222,9 @@ else if (c==3)
 		{
 			char filename[1000]; //////size of charecter
 			FILE*f2;
-			sprintf(filename,"SC\\%d.dat",step);
+			// snprintf(filename,"SC\\%d.dat",step);
+			sprintf(filename, "xST/%d.dat", step);
+
 			f2=fopen(filename,"w");
 			fprintf(f2,"VARIABLES=X,T\n");
 			fprintf(f2,"\nZONE T=\"0\" i=%d, ZONETYPE=ORDERED,DATAPACKING=POINT\n",nx);
@@ -223,22 +236,31 @@ else if (c==3)
 				}
 			}
 			fclose(f2);
+			printf("File to be created: %s\n", filename);
+
 		}
 	
     step++;
 }
+
 while(rms>residue);
-//printf("%d",step);
+// printf("%d",step);
 
 //-------------file writing------------//
 FILE *f1;
-//for(i=0;i<=nx;i++)
+for(i=0;i<=nx;i++)
 {
 	
-	f1 = fopen("temp.dat","w");
+	// f1 = fopen("temp.dat","w");
+	f1 = fopen("temp.dat", "w");
+	if (f1 == NULL) {
+    perror("Error opening temp.dat");
+    return 1; // Exit if file opening fails
+}
+
 	fprintf(f1,"VARIABLES=""X"",""TEMPERATURE""\nZONE I=%d ZONETYPE=ORDERED DATAPACKING=POINT\n",nx+2);
 	for(i=0;i<=nx+1;i++)
-	fprintf(f1,"%lf\t%lf\n",x[i],T[i]);	
+		fprintf(f1,"%lf\t%lf\n",x[i],T[i]);	
 }
 fclose(f1);
 return 0;
