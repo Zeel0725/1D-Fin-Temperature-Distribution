@@ -21,10 +21,10 @@ This project simulates the temperature distribution in a 1D fin under different 
 ## Project Structure
 The repository is structured as follows:
 
-- [src/](src/)  
+- [src](src/)  
   - [s_constant code 1d fin.cpp](src/s_constant%20code%201d%20fin.cpp): C++ code for modeling the temperature distribution.
   - [plot_script.gp](src/plot_script.gp): Gnuplot script for plotting the results.
-- [documents/](documents/)  
+- [documents](documents/)  
   - [cfd (1).docx](documents/cfd%20(1).docx): PDF report detailing the methodology and results.
   - [PRESENTATION CFD.pptx](documents/PRESENTATION%20CFD.pptx): PowerPoint presentation summarizing the project.
   - [temperature_plots.png](documents/temperature_plots.png):
