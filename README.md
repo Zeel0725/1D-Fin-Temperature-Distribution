@@ -25,15 +25,15 @@ The repository is structured as follows:
 1D-Fin-Temperature-Distribution/
 │
 ├── src/
-│   ├── temperature_model.cpp      # C++ code for modeling the temperature distribution
-│   ├── plot.gnu                   # GNUplot script for plotting results
-│
-├── ST/                            # Directory containing the generated .dat files (temperature data)
+│   ├── s_constant code 1d fin.cpp      # C++ code for modeling the temperature distribution
+│   ├── plot_script.gp                  # GNUplot script for plotting results
+│   ├── ST/                            # Directory containing the generated .dat files (temperature data)
 │
 ├── docs/
-│   ├── report.pdf                 # Report detailing the methodology and results
-│   ├── presentation.pptx          # PowerPoint presentation summarizing the assignment
-│
+│   ├── cfd(1).docx                 # Report detailing the methodology and results
+│   ├── PRESENTATION CFD.pptx          # PowerPoint presentation summarizing the assignment
+│   ├── temperature_plots.png
+|
 ├── README.md                      # This README file
 
 
