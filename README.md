@@ -13,7 +13,6 @@ The project uses **C++** for numerical modeling and the **TDMA (Tri-Diagonal Mat
 - [Setup and Execution](#setup-and-execution)
 - [Visualization](#visualization)
 - [Results](#results)
-- [Files](#files)
 - [References](#references)
 
 ## Overview
@@ -79,13 +78,6 @@ This will generate plots showing the temperature distribution under different he
 
 The results demonstrate how the heating rate (constant, length-dependent, or time-dependent) affects the temperature distribution along the fin. The visualizations generated using GNUplot help illustrate the temperature variation over time and space, providing insights into thermal behavior under each heating condition.
 
-
-## Files
-
-src/temperature_model.cpp: C++ code that implements the TDMA algorithm to compute the temperature distribution.
-src/plot.gnu: GNUplot script for visualizing the results.
-docs/report.pdf: Detailed report explaining the methodology and findings.
-docs/presentation.pptx: PowerPoint presentation summarizing the key aspects of the project.
 
 ## References
 - [GNUplot Documentation](http://www.gnuplot.info/documentation.html)
