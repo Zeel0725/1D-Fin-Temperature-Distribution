@@ -24,18 +24,18 @@ The repository is structured as follows:
 
 1D-Fin-Temperature-Distribution/
 
-│
 ├── src/
+
 │   ├── s_constant code 1d fin.cpp      
 │   ├── plot_script.gp                  
 │   ├── ST/                            
-│
+
 
 ├── docs/
+
 │   ├── cfd(1).docx                 
 │   ├── PRESENTATION CFD.pptx          
 │   ├── temperature_plots.png
-|
 
 ├── README.md                     
 
