@@ -21,7 +21,7 @@ This project simulates the temperature distribution in a 1D fin under different 
 
 ## Project Structure
 The repository is structured as follows:
-
+###
 1D-Fin-Temperature-Distribution/
 
 ├── src/
