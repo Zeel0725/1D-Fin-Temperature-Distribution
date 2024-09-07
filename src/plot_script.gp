@@ -1,5 +1,5 @@
 
-maxIterations=400
+maxIterations=4000
 # Specify the output file format and name
 set terminal pngcairo
 set output "temperature_plots.png"
@@ -16,4 +16,4 @@ set title "Temperature Variation over Iterations S(x)"
 
 # Plot data from multiple files using a loop
 #plot for [i=0:maxIterations] 'TEST/'.i.'.dat' using 1:2 with lines title 'S=0.0'.i
-plot for [i=1:maxIterations:10] 'SX/'.i.'.dat' using 1:2 with lines notitle 
+plot for [i=1:maxIterations:100] 'ST/'.i.'.dat' using 1:2 with lines notitle 
