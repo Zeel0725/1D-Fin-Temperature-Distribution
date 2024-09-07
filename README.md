@@ -62,8 +62,15 @@ The repository is structured as follows:
 ## Visualization
 
 To visualize the temperature distribution over time:
-Open the plot.gnu file with GNUplot:
-gnuplot plot.gnu
+1. Navigate to the folder:
+   ```bash
+   cd 1D-Fin-Temperature-Distribution/src/plot_script
+4. Run the following code in terminal:
+   ```bash
+   gnuplot plot_script.gp
+6. Open the compiled program:
+   ```bash
+   open temperature_plots.png
 
 
 This will generate plots showing the temperature distribution under different heating conditions for each scenario.
