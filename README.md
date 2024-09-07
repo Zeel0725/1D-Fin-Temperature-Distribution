@@ -51,9 +51,9 @@ The repository is structured as follows:
 2. Navigate to the src folder:
    ```bash
    cd 1D-Fin-Temperature-Distribution/src
-4. Compile the C++ code:
+4. Compile the C++ code:(for example)
    ```bash
-   g++ temperature_model.cpp -o temp_model
+   g++ gnuplot plot_script.gp.cpp -o temp_model
 6. Run the compiled program:
    ```bash
    ./temp_model
