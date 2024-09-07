@@ -24,10 +24,10 @@ The repository is structured as follows:
 - [src/](src/)  
   - [s_constant code 1d fin.cpp](src/s_constantcode1dfin.cpp): C++ code for modeling the temperature distribution.
   - [plot_script.gp](src/plot_script.gp): Gnuplot script for plotting the results.
-- [docs/](docs/)  
-  - [cfd(1).pdf](docs/cfd(1).docx): PDF report detailing the methodology and results.
-  - [PRESENATATIONCFD.pptx](docs/PRESENTATIONCFD.pptx): PowerPoint presentation summarizing the project.
-  - [temperature_plot.png](docs/temperature_plot.png):
+- [documents/](documents/)  
+  - [cfd(1).docx](docs/cfd(1).docx): PDF report detailing the methodology and results.
+  - [PRESENATATION CFD.pptx](docs/PRESENTATIONCFD.pptx): PowerPoint presentation summarizing the project.
+  - [temperature_plots.png](docs/temperature_plot.png):
 - [README.md](README.md): This file.
 
 ## Setup and Execution
