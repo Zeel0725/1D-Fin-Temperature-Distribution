@@ -76,7 +76,6 @@ The results demonstrate how the heating rate (constant, length-dependent, or tim
 - [GNUplot Documentation](http://www.gnuplot.info/documentation.html)
 - [TDMA Algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Tridiagonal_matrix_algorithm)
 - [C++ Standard Library Documentation](https://en.cppreference.com/w/)
-- [C# Documentation (Microsoft)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 
 
 
